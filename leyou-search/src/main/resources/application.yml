@@ -10,7 +10,7 @@ spring:
   jackson:
     default-property-inclusion: non_null # 在对象转换json时 如果属性值为null 则不转换
   rabbitmq:
-    host: 192.168.56.101
+    host: 114.67.70.58
     virtual-host: /leyou
     username: leyou
     password: leyou

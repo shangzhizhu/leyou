@@ -9,14 +9,12 @@ import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
-@Component
-@EnableConfigurationProperties({JwtProperties.class, FilterProperties.class})
+//@Component
+//@EnableConfigurationProperties({JwtProperties.class, FilterProperties.class})
 public class LoginFilter extends ZuulFilter {
 
     @Autowired

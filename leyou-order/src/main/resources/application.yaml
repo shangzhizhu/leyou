@@ -5,9 +5,9 @@ spring:
   application:
     name: order-service
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/leyou?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    url: jdbc:mysql://114.67.70.58:3306/leyou?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
-    password: root
+    password: 123qwe
     driver-class-name: com.mysql.jdbc.Driver
     druid:
       initial-size: 5
@@ -16,7 +16,7 @@ spring:
       max-wait: 1000
       test-on-borrow: true
   rabbitmq:
-    host: 192.168.56.101
+    host: 114.67.70.58
     username: leyou
     password: leyou
     virtual-host: /leyou
@@ -29,7 +29,7 @@ spring:
       exchange: leyou.item.exchange
     publisher-confirms: true
   redis:
-    host: 192.168.56.101
+    host: 114.67.70.58
 eureka:
   client:
     service-url:
